@@ -115,7 +115,6 @@ var Shot = Class.create(Sprite, {
 	move: function() {
 		var x = this.x + this.vx;
 		var y = this.y + this.vy;
-		var moveOrRemove = true;
 		if (this.vx != 0) {
 			if (0 <= x && x < SCREEN_WIDTH-8) {
 				this.moveBy(this.vx, this.vy);
